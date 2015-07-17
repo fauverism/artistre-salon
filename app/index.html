@@ -13,7 +13,8 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700|Quicksand:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alex+Brush|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- endbuild -->
   </head>
   <body ng-app="artApp">
@@ -24,7 +25,7 @@
     <!-- Add your site or application content here -->
     <div class="header">
       <div class="navbar navbar-default" role="navigation" ng-controller="headerController">
-        <div class="container">
+        <div class="container top-nav">
           <div class="navbar-header">
             <!--<a class="navbar-brand" href="#/">artistre-salon</a>-->
           </div>
@@ -34,6 +35,7 @@
             <li><a href="#section-3" du-smooth-scroll du-scrollspy>Spa Services</a></li>
             <li><a href="#section-4" du-smooth-scroll du-scrollspy>Make An Appointment</a></li>
             <li><a href="#section-5" du-smooth-scroll du-scrollspy>Contact</a></li>
+            <li><a href="#section-6" du-smooth-scroll du-scrollspy>Social</a></li>
           </ul>
         </div>
       </div>
@@ -43,15 +45,15 @@
 
     <div class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from artistre</p>
-        <p>Social links</p>
+
       </div>
     </div>
     <footer>
-      artiste
-      address
-      phone email
-      date
+      <ul>
+        <li><span class="glyphicon glyphicon-heart"></span> from artistre salon &amp; spa <i class="fa fa-instagram"></i>&nbsp;<i class="fa fa-twitter"></i>&nbsp;<i class="fa fa-facebook"></i></li>
+        <li><a href="tel:1-609-845-3161">609-845-3161</a> | <a href="https://www.google.com/maps/place/artistre+salon+%26+spa/@39.9759057,-74.8382129,17z/data=!3m1!4b1!4m2!3m1!1s0x89c149c810999b7d:0x458c65b01ddb71c9" target="_blank">1351 Route 38 Suite 2, Hainesport, NJ 08036</a> | <a href="info@artistre-salon.com">info@artistre-salon.com</a></li>
+        <li>Hours: Tues - Fri: 9AM to 8PM | Sat: 9AM to 4PM | Sun-Mon: Closed</li>
+      </ul>
     </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
