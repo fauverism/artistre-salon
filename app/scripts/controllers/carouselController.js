@@ -30,10 +30,16 @@ angular.module('artApp')
         "image": "http://artistre-salon.com/images/hair-003.png"
       },
       {
-        "ImageID": 2,
+        "ImageID": 4,
         "Title": "Hair",
         "Summary": "Brunette",
         "image": "http://artistre-salon.com/images/hair-004.png"
+      },
+      {
+        "ImageID": 5,
+        "Title": "Hair",
+        "Summary": "Brunette",
+        "image": "http://artistre-salon.com/images/hair-005.png"
       }
     ];
   });
