@@ -113,7 +113,7 @@ ul li {
   }
 }
 .carousel {
-  height: 400px;
+  height: 490px;
 }
 .carousel-inner>.item>img {
   -webkit-transition: opacity 3s; -moz-transition: opacity 3s; -ms-transition: opacity 3s; -o-transition: opacity 3s; transition: opacity 3s; opacity: 1;}
@@ -134,7 +134,7 @@ footer {
   text-align: center;
 }
 .logo {
-  background: yellowgreen;
+  background: url(../images/artistre-logo-mark-type-blk.gif) center center no-repeat;
   height: 150px;
   width: 500px;
   z-index: 99;

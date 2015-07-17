@@ -23,17 +23,17 @@
 
     <!-- Add your site or application content here -->
     <div class="header">
-      <div class="navbar navbar-default" role="navigation">
+      <div class="navbar navbar-default" role="navigation" ng-controller="headerController">
         <div class="container">
           <div class="navbar-header">
             <!--<a class="navbar-brand" href="#/">artistre-salon</a>-->
           </div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#/">About</a></li>
-            <li><a ng-href="#/about">Make An Appointment</a></li>
-            <li><a ng-href="#/hair">Hair Services</a></li>
-            <li><a ng-href="#/spa">Spa Services</a></li>
-            <li><a ng-href="#/contact">Contact</a></li>
+            <li><a href="#section-1" du-smooth-scroll du-scrollspy>About</a></li>
+            <li><a href="#section-2" du-smooth-scroll du-scrollspy>Hair Services</a></li>
+            <li><a href="#section-3" du-smooth-scroll du-scrollspy>Spa Services</a></li>
+            <li><a href="#section-4" du-smooth-scroll du-scrollspy>Make An Appointment</a></li>
+            <li><a href="#section-5" du-smooth-scroll du-scrollspy>Contact</a></li>
           </ul>
         </div>
       </div>
@@ -53,8 +53,6 @@
       phone email
       date
     </footer>
-
-
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -79,14 +77,16 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/carouselController.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/carouselController.js"></script>
+    <script src="scripts/controllers/headerController.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
