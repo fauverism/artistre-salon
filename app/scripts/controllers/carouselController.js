@@ -13,27 +13,27 @@ angular.module('artApp')
     var slides = $scope.slides = [
       {
         "ImageID": 1,
-        "Title": "food",
-        "Summary": "Something about food",
-        "image": "http://lorempixel.com/1280/500/food/"
+        "Title": "Hair",
+        "Summary": "Brunette",
+        "image": "http://artistre-salon.com/images/hair-001.png"
       },
       {
         "ImageID": 2,
-        "Title": "sport",
-        "Summary": "Something about sports",
-        "image": "http://lorempixel.com/1280/500/sports/"
+        "Title": "Hair",
+        "Summary": "Blond",
+        "image": "http://artistre-salon.com/images/hair-002.png"
       },
       {
         "ImageID": 3,
-        "Title": "food",
-        "Summary": "Something about food",
-        "image": "http://lorempixel.com/1280/500/food/"
+        "Title": "Hair",
+        "Summary": "Redhead",
+        "image": "http://artistre-salon.com/images/hair-003.png"
       },
       {
-        "ImageID": 4,
-        "Title": "sport",
-        "Summary": "Something about sports",
-        "image": "http://lorempixel.com/1280/500/sports/"
+        "ImageID": 2,
+        "Title": "Hair",
+        "Summary": "Brunette",
+        "image": "http://artistre-salon.com/images/hair-004.png"
       }
     ];
   });
