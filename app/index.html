@@ -24,22 +24,30 @@
 
     <!-- Add your site or application content here -->
     <div class="header">
-      <div class="navbar navbar-default" role="navigation" ng-controller="headerController">
-        <div class="container top-nav">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <!--<a class="navbar-brand" href="#/">artistre-salon</a>-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">artistre</a>
           </div>
-          <!--<ul class="nav navbar-nav" du-spy-context du-scroll-container="scroll-container">-->
-          <ul class="nav navbar-nav">
-            <li><a href="#section-1" du-smooth-scroll du-scrollspy>About</a></li>
-            <li><a href="#section-2" du-smooth-scroll du-scrollspy>Hair Services</a></li>
-            <li><a href="#section-3" du-smooth-scroll du-scrollspy>Spa Services</a></li>
-            <li><a href="#section-4" du-smooth-scroll du-scrollspy>Make An Appointment</a></li>
-            <li><a href="#section-6" du-smooth-scroll du-scrollspy>Social</a></li>
-            <li><a href="#section-5" du-smooth-scroll du-scrollspy>Contact</a></li>
-          </ul>
-        </div>
-      </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#section-1" du-smooth-scroll du-scrollspy>About</a></li>
+              <li><a href="#section-2" du-smooth-scroll du-scrollspy>Hair Services</a></li>
+              <li><a href="#section-3" du-smooth-scroll du-scrollspy>Spa Services</a></li>
+              <li><a href="#section-4" du-smooth-scroll du-scrollspy>Make An Appointment</a></li>
+              <li><a href="#section-6" du-smooth-scroll du-scrollspy>Social</a></li>
+              <li><a href="#section-5" du-smooth-scroll du-scrollspy>Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
     </div>
 
     <div ng-view=""></div>
@@ -72,20 +80,20 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="../bower_components/angular/angular.js"></script>
-    <script src="../bower_components/angular-animate/angular-animate.js"></script>
-    <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="../bower_components/angular-resource/angular-resource.js"></script>
-    <script src="../bower_components/angular-route/angular-route.js"></script>
-    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="../bower_components/angular-touch/angular-touch.js"></script>
-    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="../bower_components/angular-scroll/angular-scroll.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-    <script src="../bower_components/bootstrap/js/collapse.js"></script>
-    <script src="../bower_components/bootstrap/js/transition.js"></script>
+    <script src="bower_components/bootstrap/js/collapse.js"></script>
+    <script src="bower_components/bootstrap/js/transition.js"></script>
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
