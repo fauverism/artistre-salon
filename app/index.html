@@ -26,9 +26,8 @@
     <div class="header">
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -36,14 +35,14 @@
             </button>
             <a class="navbar-brand" href="#">artistre</a>
           </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a href="#section-1" du-smooth-scroll du-scrollspy>About</a></li>
-              <li><a href="#section-2" du-smooth-scroll du-scrollspy>Hair Services</a></li>
-              <li><a href="#section-3" du-smooth-scroll du-scrollspy>Spa Services</a></li>
-              <li><a href="#section-4" du-smooth-scroll du-scrollspy>Make An Appointment</a></li>
-              <li><a href="#section-6" du-smooth-scroll du-scrollspy>Social</a></li>
-              <li><a href="#section-5" du-smooth-scroll du-scrollspy>Contact</a></li>
+              <li><a href="#section-1" data-toggle="collapse" data-target="#section-1" aria-expanded="false" aria-controls="#section-1" du-smooth-scroll du-scrollspy>About</a></li>
+              <li><a href="#section-2" data-toggle="collapse" data-target="#section-2" aria-expanded="false" aria-controls="#section-2" du-smooth-scroll du-scrollspy>Hair Services</a></li>
+              <li><a href="#section-3" data-toggle="collapse" data-target="#section-3" aria-expanded="false" aria-controls="#section-3" du-smooth-scroll du-scrollspy>Spa Services</a></li>
+              <li><a href="#section-4" data-toggle="collapse" data-target="#section-4" aria-expanded="false" aria-controls="#section-4" du-smooth-scroll du-scrollspy>Make An Appointment</a></li>
+              <li><a href="#section-6" data-toggle="collapse" data-target="#section-6" aria-expanded="false" aria-controls="#section-6" du-smooth-scroll du-scrollspy>Social</a></li>
+              <li><a href="#section-5" data-toggle="collapse" data-target="#section-5" aria-expanded="false" aria-controls="#section-5" du-smooth-scroll du-scrollspy>Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -101,6 +100,8 @@
     <script src="scripts/controllers/about.js"></script>
     <script src="scripts/controllers/carouselController.js"></script>
     <script src="scripts/controllers/headerController.js"></script>
+    <script src="scripts/controllers/showImages.js"></script>
+    <script src="scripts/services/instagramAPI.js"></script>
     <!-- endbuild -->
 </body>
 </html>
