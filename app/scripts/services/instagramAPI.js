@@ -7,7 +7,7 @@ angular.module('artApp').
   return {
     fetchPhotos: function(callback){
       var endpoint = "https://api.instagram.com/v1/users/" + user_id + "/media/recent/?";
-      endpoint += "?count=99";
+      endpoint += "?count=4";
       endpoint += "&client_id=" + client_id;
       endpoint += "&callback=JSON_CALLBACK";
       $http.jsonp(endpoint).success(function(response){
