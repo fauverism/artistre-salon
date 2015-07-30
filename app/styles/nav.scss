@@ -1,0 +1,14 @@
+.top-nav {
+  width: 642px;
+}
+.navbar-nav {
+  //text-transform: uppercase;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #444 !important;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  background: #444 !important;
+  color: #ccc !important;
+
+}

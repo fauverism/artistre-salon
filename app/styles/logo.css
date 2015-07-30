@@ -1,0 +1,12 @@
+.logo {
+  background: url(../images/artistre-logo-mark-type-blk.png) center center no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  height: 164px;
+  width: 500px;
+  /*top: -320px;*/
+  z-index: 99;
+  margin: 0 auto;
+  position: relative; }
+
+/*# sourceMappingURL=logo.css.map */

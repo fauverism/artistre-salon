@@ -1,0 +1,31 @@
+@import "variables.scss";
+
+.carousel-inner>.item>img {
+  -webkit-transition: opacity 3s; -moz-transition: opacity 3s; -ms-transition: opacity 3s; -o-transition: opacity 3s; transition: opacity 3s; opacity: 1;}
+.carousel .active.left {left:0;opacity:0;z-index:2;}
+.carousel .next {left:0;opacity:1;z-index:1;}
+.carousel-control {
+  display: none;
+}
+.carousel-indicators li {
+  background-color: #ccc !important;
+}
+.carousel-indicators .active {
+  background-color: #666 !important;
+}
+
+@media screen and (max-width: $bp-small) {
+  .carousel {
+    height: 200px;
+  }
+}
+@media screen and (max-width: $bp-med) {
+  .carousel {
+    height: 400px;
+  }
+}
+@media screen and (max-width: $bp-large) {
+  .carousel {
+    height: 480px;
+  }
+}
