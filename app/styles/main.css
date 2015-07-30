@@ -25,15 +25,19 @@
 .carousel-indicators .active {
   background-color: #666 !important; }
 
-@media screen and (max-width: 24em) {
+@media screen and (min-width: 24em) {
   .carousel {
-    height: 200px; } }
-@media screen and (max-width: 46.8em) {
+    height: 194px; } }
+@media screen and (min-width: 46.8em) {
   .carousel {
     height: 400px; } }
-@media screen and (max-width: 50em) {
+@media screen and (min-width: 50em) {
   .carousel {
-    height: 480px; } }
+    height: 480px;
+    margin: 0 0 60px; }
+
+  .carousel-indicators {
+    bottom: 60px !important; } }
 .bar {
   /*background-color:#5c9bb7;*/
   /*background-image:-webkit-linear-gradient(top, #5c9bb7, #5392ad);*/
@@ -83,6 +87,22 @@
   outline: none;
   text-indent: 40px; }
 
+ul.grid {
+  list-style: none;
+  width: 570px;
+  margin: 0 auto;
+  text-align: left; }
+
+ul.grid li {
+  padding: 2px;
+  float: left; }
+
+ul.grid li img {
+  width: 280px;
+  height: 280px;
+  display: block;
+  border: none; }
+
 .logo {
   background: url(../images/artistre-logo-mark-type-blk.png) center center no-repeat;
   -webkit-background-size: 100%;
@@ -94,26 +114,29 @@
   width: 500px;
   z-index: 99; }
 
-@media screen and (max-width: 24em) {
+@media screen and (min-width: 24em) {
   .logo {
-    height: 41px !important;
-    top: -69px !important;
-    width: 125px !important; } }
-@media screen and (max-width: 940px) {
+    height: 49px;
+    top: -106px;
+    width: 147px; } }
+@media screen and (min-width: 30em) {
   .logo {
-    height: 100px !important;
-    top: -240px !important;
-    width: 338px !important; } }
-@media screen and (max-width: 46.8em) {
-  .logo {
-    height: 120px;
-    top: -260px;
-    width: 388px; } }
-@media screen and (max-width: 73em) {
+    height: 90px;
+    top: -148px;
+    width: 200px; } }
+@media screen and (min-width: 46.8em) {
   .logo {
     height: 130px;
-    top: -260px;
+    top: -440px;
     width: 388px; } }
+@media screen and (min-width: 780px) {
+  .logo {
+    top: -44px; } }
+@media screen and (min-width: 73em) {
+  .logo {
+    height: 148px;
+    top: -360px;
+    width: 450px; } }
 .top-nav {
   width: 642px; }
 
@@ -124,6 +147,10 @@
   background: #444 !important;
   color: #ccc !important; }
 
+@media screen and (min-width: 24em) {
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent; } }
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -196,22 +223,6 @@ ul.list li p {
   font-weight: bold;
   color: #6e7a7f; }
 
-ul.grid {
-  list-style: none;
-  width: 570px;
-  margin: 0 auto;
-  text-align: left; }
-
-ul.grid li {
-  padding: 2px;
-  float: left; }
-
-ul.grid li img {
-  width: 280px;
-  height: 280px;
-  display: block;
-  border: none; }
-
 .appointment {
   height: 1034px;
   width: 100%; }
@@ -222,18 +233,6 @@ ul.grid li img {
 .footer {
   padding-left: 15px;
   padding-right: 15px; }
-
-/* Custom page header */
-.header, .navbar {
-  border-bottom: none;
-  margin: 0 !important; }
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px; }
 
 /* Custom page footer */
 .footer {
@@ -249,16 +248,42 @@ footer p {
 .container-narrow > hr {
   margin: 30px 0; }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5; }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 48px !important;
+    text-align: center; }
 
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px; }
+  h2 {
+    border: 1px solid #444;
+    font-size: 18px !important;
+    margin: 20px 0 5px;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase; }
 
-/* Responsive: Portrait tablets and up */
+  p, .row li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    margin: 0 0 20px; }
+
+  .marketing {
+    margin: 10px 0; }
+
+  .container {
+    max-width: 730px; }
+
+  p, .row li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    margin: 0 0 20px; } }
+@media screen and (min-width: 880px) {
+  p, .row li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.83rem;
+    line-height: 2.5rem;
+    margin: 0 0 10px; } }
 .skin-care ul {
   margin: 20px 0 0; }
 

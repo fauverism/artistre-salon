@@ -14,18 +14,25 @@
   background-color: #666 !important;
 }
 
-@media screen and (max-width: $bp-small) {
+@media screen and (min-width: $bp-small) {
   .carousel {
-    height: 200px;
+    height: 194px;
+  }
+  .carousel-indicators {
+    //bottom: 32px !important;
   }
 }
-@media screen and (max-width: $bp-med) {
+@media screen and (min-width: $bp-med) {
   .carousel {
     height: 400px;
   }
 }
-@media screen and (max-width: $bp-large) {
+@media screen and (min-width: $bp-large) {
   .carousel {
     height: 480px;
+    margin: 0 0 60px;
+  }
+  .carousel-indicators {
+    bottom: 60px !important;
   }
 }

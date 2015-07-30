@@ -1,3 +1,5 @@
+@import "variables";
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -71,23 +73,6 @@ ul.list li p{
   color:#6e7a7f;
 }
 
-ul.grid{
-  list-style: none;
-  width: 570px;
-  margin: 0 auto;
-  text-align: left;
-}
-ul.grid li{
-  padding: 2px;
-  float:left;
-}
-ul.grid li img{
-  width:280px;
-  height:280px;
-  display:block;
-  border:none;
-}
-
 .appointment {
   height: 1034px;
   width: 100%;
@@ -99,19 +84,6 @@ ul.grid li img{
 .footer {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-/* Custom page header */
-.header, .navbar {
-  border-bottom: none;
-  margin: 0 !important;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
 }
 
 /* Custom page footer */
@@ -130,103 +102,51 @@ footer p {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 48px !important;
+    text-align: center;
+  }
+  h2 {
+    border: 1px solid #444;
+    font-size: 18px !important;
+    margin: 20px 0 5px;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p, .row li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    margin: 0 0 20px;
+  }
+  .marketing {
+    margin: 10px 0;
+  }
+  .container {
+    max-width: 730px;
+  }
+  p, .row li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    margin: 0 0 20px;
+  }
 }
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+
+@media screen and (min-width: 880px) {
+  //.carousel {
+  //  height: 380px;
+  //}
+
+  p, .row li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.83rem;
+    line-height: 2.5rem;
+    margin: 0 0 10px;
+  }
 }
-
-/* Responsive: Portrait tablets and up */
-
-
-
-//@media screen and (max-width: 768px) {
-//  h1 {
-//    font-size: 48px !important;
-//    text-align: center;
-//  }
-//  h2 {
-//    border: 1px solid #444;
-//    font-size: 18px !important;
-//    margin: 20px 0 5px;
-//    padding: 5px;
-//    text-align: center;
-//    text-transform: uppercase;
-//  }
-//  h3 {
-//    /*font-size: 18px;*/
-//  }
-//  p, .row li {
-//    font-family: 'Montserrat', sans-serif;
-//    font-size: 1.5rem;
-//    line-height: 2.3rem;
-//    margin: 0 0 20px;
-//  }
-//  .carousel {
-//    top: 23px;
-//  }
-//
-//  .marketing {
-//    margin: 10px 0;
-//  }
-//}
-//@media screen and (max-width: 768px) {
-//  .container {
-//    max-width: 730px;
-//  }
-//  /* Remove the padding we set earlier */
-//  .header,
-//  .marketing,
-//  .footer {
-//    padding-left: 0;
-//    padding-right: 0;
-//  }
-//  /* Space out the masthead */
-//  .header {
-//    /*margin-bottom: 30px;*/
-//    border-bottom: 1px solid #333333;
-//    position: fixed;
-//    top: -1px;
-//    left: 1px;
-//    z-index: 11;
-//    opacity: 0.9;
-//    width: 100%;
-//  }
-//  /* Remove the bottom border on the jumbotron for visual effect */
-//  .jumbotron {
-//    border-bottom: 0;
-//  }
-//  .carousel {
-//    height: 375px;
-//  }
-//  //.logo {
-//  //  height: 82px !important;
-//  //  top: -150px !important;
-//  //  width: 250px !important;
-//  //}
-//  p, .row li {
-//    font-family: 'Montserrat', sans-serif;
-//    font-size: 1.5rem;
-//    line-height: 2.3rem;
-//    margin: 0 0 20px;
-//  }
-//}
-//@media screen and (min-width: 880px) {
-//  //.carousel {
-//  //  height: 380px;
-//  //}
-//
-//  p, .row li {
-//    font-family: 'Montserrat', sans-serif;
-//    font-size: 1.83rem;
-//    line-height: 2.5rem;
-//    margin: 0 0 10px;
-//  }
-//}
 //@media screen and (min-width: 1024px) {
 //  //.carousel {
 //  //  height: 375px;
@@ -248,29 +168,12 @@ footer p {
 //  }
 //
 //}
-//@media screen and (min-width: 1400px) {
-//  //.carousel {
-//  //  height: 480px;
-//  //}
-//  //.logo {
-//  //  background: url(../images/artistre-logo-mark-type-blk.png) center center no-repeat;
-//  //  -webkit-background-size: 100%;
-//  //  background-size: 100%;
-//  //  height: 160px;
-//  //  width: 500px;
-//  //  top: -300px;
-//  //}
-//}
-
 .skin-care ul {
   margin: 20px 0 0;
 }
-
 section {overflow:hidden;}
 .spot {float:left;margin:0 15px 15px 0;}
 .spot p {font-weight:400;}
-
-
 .footer {
   margin-bottom: 100px;
 }
