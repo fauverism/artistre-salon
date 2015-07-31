@@ -1,5 +1,5 @@
 .carousel {
-  margin: 0 0 -60px 0; }
+  margin: 50px 0 -60px 0; }
 
 .carousel-inner > .item > img {
   -webkit-transition: opacity 3s;
@@ -165,11 +165,20 @@ ul.grid li img {
     height: 148px;
     top: -220px;
     width: 450px; } }
+.navbar-default {
+  opacity: 0.9; }
+
+.navbar-default .navbar-toggle {
+  border-color: #000; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #444; }
+
 .top-nav {
   width: 642px; }
 
 .navbar-default .navbar-nav > li > a {
-  color: #444 !important; }
+  color: #000 !important; }
 
 .navbar-default .navbar-nav > li > a:hover {
   background: #444 !important;
