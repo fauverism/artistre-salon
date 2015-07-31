@@ -108,6 +108,11 @@ footer p {
   .marketing {
     margin: 0;
   }
+  footer p {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
