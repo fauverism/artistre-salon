@@ -37,6 +37,9 @@ h3 {
   font-size: 18px;
   margin: 40px 0 0 !important;
 }
+p, .row li {
+  font-family: 'Montserrat', sans-serif;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -101,6 +104,11 @@ footer p {
 .container-narrow > hr {
   margin: 30px 0;
 }
+@media screen and (max-width: 320px) {
+  .marketing {
+    margin: 0;
+  }
+}
 
 @media screen and (max-width: 768px) {
   h1 {
@@ -122,7 +130,7 @@ footer p {
     margin: 0 0 20px;
   }
   .marketing {
-    margin: 10px 0;
+    margin: 40px 0;
   }
   .container {
     max-width: 730px;
