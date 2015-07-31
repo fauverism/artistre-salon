@@ -14,4 +14,10 @@ angular.module('artApp')
       'AngularJS',
       'Karma'
     ];
+
+    $('ul.navbar-nav li a').on('click', function() {
+      console.log('clicked the navbar a one');
+      $('.navbar-collapse').removeClass('in');
+    });
+
   });
