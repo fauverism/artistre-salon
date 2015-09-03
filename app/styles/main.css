@@ -238,6 +238,14 @@ h3 {
   font-size: 18px;
   margin: 40px 0 0 !important; }
 
+img, object, video {
+  max-width: 100%;
+  border: 0; }
+
+a img {
+  border: 0;
+  outline: 0; }
+
 p, .row li {
   font-family: 'Montserrat', sans-serif; }
 
@@ -384,5 +392,81 @@ footer {
   opacity: 0.9;
   width: 100%;
   text-align: center; }
+
+/*Patterns*/
+.mod {
+  padding: 1em; }
+
+.pattern {
+  background: #f7f7f7;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 1em;
+  overflow: hidden; }
+
+.pattern-description h1 {
+  font-size: 3.4em;
+  margin-bottom: 0.5em; }
+
+.pattern-description {
+  max-width: 40em;
+  margin: 0 auto; }
+
+.pattern-description ul, .pattern-description ol {
+  margin-bottom: 2em; }
+
+.pattern-description li {
+  margin-bottom: 1em; }
+
+.g {
+  padding: 0.25em;
+  overflow: hidden; }
+
+.g li {
+  float: left;
+  width: 50%;
+  padding: 0.25em; }
+
+.g img {
+  display: block; }
+
+.g li:nth-child(odd) {
+  clear: left; }
+
+@media screen and (min-width: 40em) {
+  .g li {
+    width: 33.3333333333333333%; }
+
+  .g li:nth-child(3n+1) {
+    clear: left; }
+
+  .g li:nth-child(odd) {
+    clear: none; } }
+@media screen and (min-width: 55em) {
+  .g li {
+    width: 25%; }
+
+  .g li:nth-child(4n+1) {
+    clear: left; }
+
+  .g li:nth-child(3n+1) {
+    clear: none; } }
+@media screen and (min-width: 72em) {
+  .g li {
+    width: 20%; }
+
+  .g li:nth-child(5n+1) {
+    clear: left; }
+
+  .g li:nth-child(4n+1) {
+    clear: none; } }
+@media screen and (min-width: 90em) {
+  .g li {
+    width: 16.666666666%; }
+
+  .g li:nth-child(6n+1) {
+    clear: left; }
+
+  .g li:nth-child(5n+1) {
+    clear: none; } }
 
 /*# sourceMappingURL=main.css.map */
