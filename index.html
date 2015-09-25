@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Alex+Brush|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="artApp">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="header">
+      <nav class="navbar navbar-fixed-top navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="">artistre</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#section-1" data-toggle="collapse" data-target="#section-1" aria-expanded="false" aria-controls="#section-1" du-smooth-scroll du-scrollspy>About</a></li>
+              <li><a href="#section-2" data-toggle="collapse" data-target="#section-2" aria-expanded="false" aria-controls="#section-2" du-smooth-scroll du-scrollspy>Hair Services</a></li>
+              <li><a href="#section-3" data-toggle="collapse" data-target="#section-3" aria-expanded="false" aria-controls="#section-3" du-smooth-scroll du-scrollspy>Spa Services</a></li>
+              <li><a href="#section-4" data-toggle="collapse" data-target="#section-4" aria-expanded="false" aria-controls="#section-4" du-smooth-scroll du-scrollspy>Appointments</a></li>
+              <li><a href="#section-6" data-toggle="collapse" data-target="#section-6" aria-expanded="false" aria-controls="#section-6" du-smooth-scroll du-scrollspy>Social</a></li>
+              <li><a href="#section-7" data-toggle="collapse" data-target="#section-7" aria-expanded="false" aria-controls="#section-7" du-smooth-scroll du-scrollspy>Products</a></li>
+              <li><a href="#section-5" data-toggle="collapse" data-target="#section-5" aria-expanded="false" aria-controls="#section-5" du-smooth-scroll du-scrollspy>Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+
+    <div ng-view=""></div>
+
+    <div class="footer">
+      <div class="container">
+
+      </div>
+    </div>
+    <footer>
+      <ul>
+        <li><span class="glyphicon glyphicon-heart" style="color: pink;"></span> from artistre salon &amp; spa</li>
+        <li><a href="tel:1-609-845-3161">609-845-3161</a> | <a href="https://www.google.com/maps/place/artistre+salon+%26+spa/@39.9759057,-74.8382129,17z/data=!3m1!4b1!4m2!3m1!1s0x89c149c810999b7d:0x458c65b01ddb71c9" target="_blank">1351 Route 38 Suite 2, Hainesport, NJ 08036</a> | <a href="mailto:info@artistre-salon.com">Email</a></li>
+        <li>Hours: Tues - Fri: 9AM to 8PM | Sat: 9AM to 4PM | Sun-Mon: Closed</li>
+      </ul>
+    </footer>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <script src="../bower_components/bootstrap/js/collapse.js"></script>
+    <script src="../bower_components/bootstrap/js/transition.js"></script>
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/carouselController.js"></script>
+    <script src="scripts/controllers/headerController.js"></script>
+    <script src="scripts/controllers/showImages.js"></script>
+    <script src="scripts/services/instagramAPI.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

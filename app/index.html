@@ -1,10 +1,12 @@
 <!doctype html>
 <html>
   <head>
+
     <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
+    <title>Hair Styling, Cuts, Color & Other Salon Services | artistre salon and spa 2015</title>
+    <meta name="description" content="Visit artistre salon and spa for the latest in hair cut, color, & salon services. Our Southern New Jersey Hainesport location has the best hair care treatments for your every need.">
     <meta name="viewport" content="width=device-width">
+		<meta name="fragment" content="!">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -17,6 +19,16 @@
     <link href='http://fonts.googleapis.com/css?family=Alex+Brush|Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- endbuild -->
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-65862627-1');
+       ga('send', 'pageview');
+    </script>
   </head>
   <body ng-app="artApp">
     <div id="fb-root"></div>
@@ -51,6 +63,7 @@
               <li><a href="#section-3" data-toggle="collapse" data-target="#section-3" aria-expanded="false" aria-controls="#section-3" du-smooth-scroll du-scrollspy>Spa Services</a></li>
               <li><a href="#section-4" data-toggle="collapse" data-target="#section-4" aria-expanded="false" aria-controls="#section-4" du-smooth-scroll du-scrollspy>Appointments</a></li>
               <li><a href="#section-6" data-toggle="collapse" data-target="#section-6" aria-expanded="false" aria-controls="#section-6" du-smooth-scroll du-scrollspy>Social</a></li>
+              <li><a href="#section-4-1" data-toggle="collapse" data-target="#section-4-1" aria-expanded="false" aria-controls="#section-4-1" du-smooth-scroll du-scrollspy>Team</a></li>
               <li><a href="#section-7" data-toggle="collapse" data-target="#section-7" aria-expanded="false" aria-controls="#section-7" du-smooth-scroll du-scrollspy>Products</a></li>
               <li><a href="#section-5" data-toggle="collapse" data-target="#section-5" aria-expanded="false" aria-controls="#section-5" du-smooth-scroll du-scrollspy>Contact</a></li>
             </ul>
@@ -58,8 +71,499 @@
         </div><!-- /.container-fluid -->
       </nav>
     </div>
+<div ng-controller="CarouselCtrl" class="carousel">
+  <carousel interval="myInterval">
+    <slide ng-repeat="slide in slides" active="slide.active" class="item">
+      <img ng-src="{{slide.image}}" style="margin:auto;" class="fadeInRight animated">
+    </slide>
+  </carousel>
+  <div class="logo"></div>
+</div>
+  <div class="container" id="section-1">
+    <div class="row marketing">
+      <p>All staff of Artistre Salon & Spa guarantees to provide the utmost services to our guests as they feel welcomed and relaxed in our at home boutique salon and spa. We are here to make sure that your time with us is time well spent as a valued member of the Artistre Salon & Spa family.</p>
+      <p>At Artistre Salon & Spa, we offer high quality styling services to satisfy your individual needs. All of our stylists are licensed professionals who attend continuing education courses in the latest salon industry trends, to keep you modern and healthy.</p>
+      <p>Our full service salon offers a variety of salon & spa services for men, women and children to make you look and feel your best.</p>
+      <p>Prices vary based on service, styling treatment and staff level of expertise.</p>
+    </div>
+  </div>
+  <div class="container" id="section-2">
+    <h1>Artistre Hair Services</h1>
+    <p>Our staff will create a customized look for you using advanced skill, techniques and exclusive professional products only found in the finest salons. Please review our list of hair services below or our entire menu via the button above. Should you have any questions regarding our services, please don’t hesitate to give us a call at 609-845-3161. ~ The Staff at Artistre Salon &amp; Spa</p>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Ladies Customized Haircuts & Styles</h2>
+        <ul>
+          <li><h3>Hair Cut & Style: $47+</h3></li>
+          <li><h3>Wash, Blow Dry & Style: $37+</h3></li>
+          <li><h3>Back Bar Remedy: $15</h3></li>
+          <li><h3>Young Ladies Haircut 12 years & under: $30+</h3></li>
+          <li><h3>Formal Up Style: $65+</h3></li>
+          <li><h3>Human Hair Extensions: Price Upon Consultation</h3></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h2>Gentlemen Grooming</h2>
+        <ul>
+          <li><h3>Refined Haircut: $27+</h3></li>
+          <li><h3>Young Mens Haircut 12 years & under: $15+</h3></li>
+          <li><h3>Mens Color Blending: $25</h3></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Customized Coloring & Resurfacing</h2>
+        <p>We offer only the highest quality hair color available in our industry. Every color is chosen for each specific client based on hair texture, condition and skin tone. Whether your look is natural or edgy, our highly trained stylists will customize your color to make you feel your best!</p>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li><h3>Initial One Step Color: $55+</h3></li>
+          <li><h3>One Step Regrowth Color: $52+</h3></li>
+          <li>
+            <h3>Partial Foiling: $80+</h3>
+            <ul>
+              <li>(Front Hair Line to Crown and Sides)</li>
+            </ul>
+          </li>
+          <li><h3>Partial Dimensional Foiling: $95+</h3>
+            <ul>
+              <li>(when applying additional color shade to Partial Foiling)</li>
+            </ul>
+          </li>
+          <li><h3>Complete Foil: $115+</h3>
+            <ul>
+              <li>(Entire Head with Foiling)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li>
+            <h3>Complete Dimensional Foil: $125+</h3>
+            <ul>
+              <li>(when applying additional color shade to Complete Foiling)</li>
+            </ul>
+          </li>
+          <li><h3>Toners, Glazes & Fillers: $20+</h3></li>
+          <li>
+          <h3>Olaplex: $20+</h3>
+            <ul>
+              <li>Corrective Coloring: Price Upon Consultation</li>
+            </ul>
+          </li>
+          <li><h3>Perms & Body Waves: $75+</h3></li>
+          <li><h3>Balayage: $150+</h3></li>
+        </ul>
+      </div>
+      <div class="col-md-12">
+        <ul>
+          <li style="text-align: center;"><h3>Keratin Smoothing Treatment: $200+</h3></li>
+        </ul>
+      </div>
 
-    <div ng-view=""></div>
+    </div>
+  </div>
+  <div class="container" id="section-3">
+    <h1>Artistre Spa Services</h1>
+    <p>Our staff will create a comfortable environment so you can take time for yourself and relax. Please review our list of spa services below or glance at our entire menu via the button above. Should you have any questions regarding any of our services, please don’t hesitate to give us a call at 609-845-3161.</p>
+    <p><i>~ The Staff at Artistre Salon &amp; Spa</i></p>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Massage Therapy</h2>
+        <ul>
+          <li>
+            <h3>Swedish Massage</h3>
+            <p>Relaxing light pressured and oil free massage. This massage is perfect for someone who is just starting their new experience with massages.</p>
+            <p><b>50 Minutes: $55+tax</b></p>
+            <p><b>90 Minutes: $95+tax</b></p>
+          </li>
+          <li>
+            <h3>Aromatherapy Massage</h3>
+            <p>Indulge in this soothing massage with essential oils, a heated pack and hot towels.</p>
+            <p><b>50 Minutes: $65+tax</b></p>
+            <p><b>90 Minutes: $105+tax</b></p>
+          </li>
+          <li>
+            <h3>Therapeutic Massage</h3>
+            <p>This massage will target those problem areas using deep pressure, trigger pointing & stretching to relieve stress & tension.</p>
+            <p><b>50 Minutes: $75+tax</b></p>
+            <p><b>90 Minutes: $115+tax</b></p>
+          </li>
+          <li>
+            <h3>Masterpiece Massage</h3>
+            <p>Your choice of Honey Polish or Lava calming the hands and feet, aromatherapy oils and hot towels to make this 75 minute massage pure relaxation.</p>
+            <p><b>75 Minutes: $85+tax</b></p>
+          </li>
+          <li>
+            <h3>Reflexology Massage</h3>
+            <p>This massage will relax and balance your internal and external body systems while improving your circulation to your nervous and energy systems.</p>
+            <p><b>50 Minutes: $50+tax</b></p>
+          </li>
+          <li>
+            <h3>Prenatal Massage</h3>
+            <p>A massage is both beneficial for mom and baby as relaxing light pressured is applied to relax tense muscles and improve circulation. We ask that all mom’s are in their second trimester for this massage.</p>
+            <p><b>50 Minutes: $60+tax</b></p>
+          </li>
+          <li>
+            <h3>Your Choice Massage</h3>
+            <p>Choose 30 minutes of pure relaxation from any one of the listed massages: Aromatherapy, Therapeutic, Swedish, Reflexology or Prenatal.</p>
+            <p><b>30 Minutes: $40+tax</b></p>
+          </li>
+          <li>
+            <h3>Scalp Massage Therapy</h3>
+            <p>A true 25 minute relaxing experience that is beneficial in providing relief from headaches, migraines and sinus conditions while using organic olive oil and rosemary oil.</p>
+            <p><b>With Shampoo: $30+tax</b></p>
+            <p><b>With Shampoo and Blowout: $55+tax</b></p>
+          </li>
+          <li>
+            <h3>Masterpiece Special</h3>
+            <p>This grand special will provide ultimate relaxation and uplift the spirit. Included is the 75 Minute Masterpiece Facial & Massage, a 45 Minute Artistre Spa Manicure and your hair washed and blown out to your style.</p>
+            <p><b>$225+tax</b></p>
+          </li>
+          <li>
+            <ul>
+              <li><h3>15 Minute Seated Neck Massage: $20+tax</h3></li>
+              <li>
+                <h3>Every Minute Counts: $10+tax</h3>
+                <ul>
+                  <li>Extend any 50 Minute Massage to 60 minutes!</li>
+                </ul>
+              </li>
+              <li>
+                <h3>Organic Scrubs & Honey Skin Polish: $15+tax</h3>
+                <ul>
+                  <li>Add an organic scrub or honey skin polish to any 50 Minute Massage.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-12">
+        <h2>Artistre Skin Care</h2>
+        <ul>
+          <li>
+            <h3>Refreshing Facial: $55</h3>
+            <p>This 50 minute facial focuses on the immediate needs of your skin. We will customize your facial specifically for your skin needs by including exfoliation, hydration, steaming, toning and a facial massage. Our refreshing facial will leave your skin feeling balanced and supple.</p>
+          </li>
+          <li>
+            <h3>Masterpiece Facial: $90</h3>
+            <p>This is one facial you will not forget. Our 75 minute signature facial begins with a thorough skin analysis followed by a deep pore cleansing, exfoliation, steam, extractions and an Organic Mineral Mask. Accompanied by a warm honey polish for the hands and a shoulder and neck massage.</p>
+          </li>
+          <li>
+            <h3>Hydrating Facial: $60</h3>
+            <p>Is your skin feeling dull or dry? Or even both?…If so, this is the facial for you! This super 60 minute hydrating facial will saturate your skin with moisture to help diminish fine lines as well as leaving your skin with a plump dewy complexion.</p>
+          </li>
+          <li>
+            <h3>Artistre Signature Facial: $65</h3>
+            <p>A very pleasing 50 minute facial, blending both the Refreshing Facial and the Hydrating Facial to receive Artistre’s Signature results!</p>
+          </li>
+          <li>
+            <h3>Dual Artistre Special: $105</h3>
+            <p>This facial goes one step further by providing ultimate benefits! While receiving an Artistre Signature Facial our massage therapist will perform reflexology to your hands and feet.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row skin-care">
+      <div class="col-xs-6">
+        <ul>
+          <li>
+            Enhancements
+            <ul>
+              <li>Gycolic Peel: $20</li>
+              <li>Collagen Eye Treatment: $10</li>
+              <li>Cucumber Treatment: $10</li>
+              <li>Vitamin C Treatment: $15</li>
+              <li>Aromatherapy Treatment: $10</li>
+              <li>Eyebrow or Eyelash Tint: $20</li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Manicures (Natural Nail)
+            <ul>
+              <li>Manicure: $22</li>
+              <li>Gel Polish Manicure: $27</li>
+              <li>Artistre Spa Manicure: $35</li>
+              <li>Add Paraffin: $10</li>
+              <li>Add Honey Polish: $10</li>
+              <li>Add Organic Scrub: $10</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-6">
+        <ul>
+          <li>
+            Waxing
+            <ul>
+              <li>Eyebrows: $14</li>
+              <li>Lip: $10</li>
+              <li>Chin: $10</li>
+              <li>Eyebrow & Lip: $22</li>
+              <li>Neck: $15</li>
+              <li>Face: $30</li>
+              <li>Full Arm: $35</li>
+              <li>Half Arm: $25</li>
+              <li>Underarm: $20</li>
+              <li>Full Leg: $55</li>
+              <li>Half Leg: $40</li>
+              <li>Full Legs & Arms: $85</li>
+              <li>Bikini: $25</li>
+              <li>Brazilian: $55</li>
+              <li>Brazilian Maintenance: $45</li>
+              <li>French: $45</li>
+              <li>Chest or Back: $40</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!--The staff-->
+  </div>
+  <div class="container" id="section-4">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Make an Appointment</h1>
+        <iframe class="col-md-12 appointment" src="https://local.intuit.com/b/artistre-salon/schedule?widget=1&d3cp_exid=artistre-salon&d3cp_source=artistre-salon.com" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+    <div class="container" id="section-4-1">
+      <div class="row">
+        <div class="col-md-12" ng-controller="teamCtrl">
+          <h2>Team</h2>
+          <!--Pattern HTML-->
+          <!--<div id="pattern" class="pattern">-->
+          <ul class="g">
+            <li class="circle" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-click="open()">
+              <img class="circle bg-green" src="images/team/alicia-hoffman.png" alt="alicia hoffman" />
+              <div class="arc" ng-show="hoverEdit">
+                <ul>
+                  <li>Alicia Hoffman</li>
+                  <li>Owner, Colorist-Stylist</li>
+                </ul>
+              </div>
+            </li>
+            <script type="text/ng-template" id="myModalContent.html">
+              <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 4px;">x</button>
+              <div class="modal-body">
+                <div class="col-md-6">
+                  <img class="circle bg-green" src="images/team/alicia-hoffman.png" alt="alicia hoffman" />
+                </div>
+                <div class="col-md-6">
+                  <h3>Alicia Hoffman</h3>
+                  <h5>Owner, Colorist-Stylist</h5>
+                  <h5><a href="https://instagram.com/a.b.hoffman/">Instagram @ a.b.hoffman</a></h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloremque est labore molestiae nostrum, provident quaerat quasi sapiente tempora ullam. Ad commodi doloremque enim quos. Amet eius facilis illum similique.</p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
+              </div>
+            </script>
+            <li class="circle" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+              <img class="circle bg-violet" src="images/team/001.png" alt="001" />
+              <!--<div class="arc" ng-show="hoverEdit">
+                <ul>
+                  <li>Lyn Gonzalez</li>
+                  <li>Colorist-Stylist</li>
+                </ul>
+              </div>-->
+            </li>
+            <li class="circle bg-purple">
+              <img src="images/team/002.png" alt="002" />
+              <!--<div class="arc" ng-show="hoverEdit">-->
+                <!--<ul>-->
+                  <!--<li></li>-->
+                  <!--<li>Colorist-Stylist</li>-->
+                <!--</ul>-->
+              <!--</div>-->
+            </li>
+            <li>
+              <img class="circle bg-turq" src="images/team/alexa.png" alt="alexa" />
+              <!--<div class="arc" ng-show="hoverEdit">-->
+                <!--<ul>-->
+                  <!--<li>Alexa</li>-->
+                  <!--<li></li>-->
+                <!--</ul>-->
+              <!--</div>-->
+            </li>
+            <li>
+              <img class="circle bg-turq" src="images/team/jami.png" alt="jami" />
+              <!--<div class="arc" ng-show="hoverEdit">-->
+                <!--<ul>-->
+                  <!--<li>Jami Ware</li>-->
+                  <!--<li>Licensed Massage Therapist</li>-->
+                <!--</ul>-->
+              <!--</div>-->
+            </li>
+            <li>
+              <img class="circle bg-light-green" src="images/team/ashley.png" alt="ashley" />
+              <!--<div class="arc" ng-show="hoverEdit">-->
+                <!--<ul>-->
+                  <!--<li>Ashley Craig</li>-->
+                  <!--<li>Colorist-Stylist-Extension Specialist</li>-->
+                <!--</ul>-->
+              <!--</div>-->
+            </li>
+            <li>
+              <img class="circle bg-violet" src="images/team/christy.png" alt="christy" />
+              <!--<div class="arc" ng-show="hoverEdit">-->
+                <!--<ul>-->
+                  <!--<li>Christy</li>-->
+                <!--</ul>-->
+              <!--</div>-->
+            </li>
+            <li><img class="circle bg-purple" src="images/team/cinnamon.png" alt="cinnamon" /></li>
+            <li><img class="circle bg-purple" src="images/team/ami.png" alt="ami" /></li>
+            <li><img class="circle bg-green" src="images/team/meg.png" alt="meg" /></li>
+            <li><img class="circle bg-light-green" src="images/team/thersea.png" alt="thersea" /></li>
+          </ul>
+          <!--</div>-->
+          <!--End Pattern HTML-->
+        </div>
+      </div>
+    </div>
+    <div class="container" id="section-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 style="text-align: center;">Contact</h2>
+        <ul>
+          <li>1351 Route 38 Suite 2,<br />Hainesport, NJ 08036</li>
+          <li>609 845 3161</li>
+          <li><a href="mailto:info@artistre-salon.com">info@artistre-salon.com</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h2>Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.455929614727!2d-74.83831590000001!3d39.9759154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c149c81bed7fdf%3A0xad61137444743856!2s1351+NJ-38+%232%2C+Hainesport%2C+NJ+08036!5e0!3m2!1sen!2sus!4v1437014380650" width="335" height="335" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <h2 style="text-align: center;">Hours</h2>
+    <h3 style="text-align: center;">Tues - Fri: 9AM to 8PM</h3>
+    <h3 style="text-align: center;">Sat: 9AM to 4PM</h3>
+    <h3 style="text-align: center;">Sun - Mon: Closed</h3>
+    <h2>Policy</h2>
+    <p>To ensure the best quality of service is provided, we have the following policies in place:</p>
+    <p>Appointments: We respectfully ask that all guests arrive at their scheduled service time. In fairness to all guests, we ask guests who are 15 minutes or more past their appointment time to reschedule.</p>
+    <p>Cancellation Policy: We ask that clients provide a 24 hour cancellation notice.</p>
+    <p>Payment: We accept Cash, Visa, MasterCard, Discover, Amex and SpaFinder. Gratuities are not included in the price of services and can not be added to credit cards.</p>
+    <p>Guarantee Policy: Your satisfaction is very important to us, and we guarantee our work 100%. If you are not feeling completely satisfied, please call within one week of your service so we may correct your service.</p>
+    <p>Prices are subject to change without notice.</p>
+  </div>
+  <div class="container" id="section-6">
+    <h1>Social</h1>
+    <div class="box-border">
+      <h2>Instagram</h2>
+    </div>
+
+    <section ng-controller="ShowImages as images">
+
+      <!--<div class="bar">-->
+        <!--<a class="list-icon" ng-class="{active: layout == 'list'}" ng-click="layout = 'list'"></a>-->
+        <!--<a class="grid-icon" ng-class="{active: layout == 'grid'}" ng-click="layout = 'grid'"></a>-->
+      <!--</div>-->
+
+      <ul ng-show="layout == 'grid'" class="grid">
+        <!-- A view with big photos and no text -->
+        <li ng-repeat="p in pics">
+          <a href="{{p.link}}" target="_blank"><img ng-src="{{p.images.low_resolution.url}}" /></a>
+        </li>                                         gi
+      </ul>
+      <ul ng-show="layout == 'list'" class="list">
+        <!-- A compact view smaller photos and titles -->
+        <li ng-repeat="p in pics">
+          <a href="{{p.link}}" target="_blank"><img ng-src="{{p.images.thumbnail.url}}" /></a>
+          <p>{{p.caption.text}}</p>
+        </li>
+      </ul>
+    </section>
+    <a href="https://instagram.com/artistresalonspa/" class="btn btn-info center-block">More Instagram</a>
+  </div><!-- .container /section-6 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Facebook</h2>
+        <div class="fb-page" data-href="https://www.facebook.com/artistresalon" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/artistresalon"><a href="https://www.facebook.com/artistresalon">Artistre Salon</a></blockquote></div></div>
+      </div>
+      <div class="col-sm-6">
+        <h2>Twitter</h2>
+        <a class="twitter-timeline" href="https://twitter.com/artistrenj" data-widget-id="621874798151340033">Tweets by @artistrenj</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </div>
+  </div><!-- /.container -->
+<div class="container" id="section-7">
+  <h1>Product Line</h1>
+  <div class="col-sm-4">
+    <h2>artistre</h2>
+  </div>
+  <div class="col-sm-4">
+    <h2>Loreal Professionnel</h2>
+  </div>
+  <div class="col-sm-4">
+    <h2>Unite</h2>
+  </div>
+</div>
+<div class="container">
+  <h1><a
+    href="https://www.demandforced3.com/b/etile_reviews_popup.jsp?d3cp_exid=artistre-salon&d3cp_source=artistre-salon.com" target="_blank">Read our reviews</a></h1>
+</div>
+<div class="container">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+				 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup">
+      <form action="//artistre-salon.us11.list-manage.com/subscribe/post?u=8782d377d4a9c68cbaec98bf6&amp;id=97787fc066" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <h2>Subscribe to our mailing list</h2>
+          <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+          <div class="mc-field-group">
+            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+            </label>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-MMERGE1">First Name </label>
+            <input type="text" value="" name="MMERGE1" class="" id="mce-MMERGE1">
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-MMERGE2">Last Name </label>
+            <input type="text" value="" name="MMERGE2" class="" id="mce-MMERGE2">
+          </div>
+          <div class="mc-field-group size1of2">
+            <label for="mce-MMERGE3">Phone Number </label>
+            <input type="number" name="MMERGE3" class="" value="" id="mce-MMERGE3">
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_8782d377d4a9c68cbaec98bf6_97787fc066" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+      </form>
+    </div>
+    <!--<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='MMERGE1';ftypes[1]='text';fnames[2]='MMERGE2';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='number';}(jQuery));var $mcj = jQuery.noConflict(true);</script>-->
+    <!--End mc_embed_signup-->
+  </div>
+  <div class="col-md-2"></div>
+</div>
+
+    <!--<div ng-view=""></div>-->
 
     <div class="footer">
       <div class="container">
@@ -74,16 +578,7 @@
       </ul>
     </footer>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
 
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 
@@ -106,8 +601,8 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/teamController.js"></script>
     <script src="scripts/controllers/carouselController.js"></script>
     <script src="scripts/controllers/headerController.js"></script>
     <script src="scripts/controllers/showImages.js"></script>

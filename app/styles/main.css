@@ -424,13 +424,88 @@ footer {
 .g li {
   float: left;
   width: 50%;
-  padding: 0.25em; }
+  padding: 0.25em;
+  filter: grayscale(0.7) blur(0px) sepia(0.26506) saturate(1) opacity(0.7) brightness(1) contrast(1) hue-rotate(0deg) invert(0);
+  -webkit-filter: grayscale(0.7) blur(0px) sepia(0.26506) saturate(1) opacity(0.51807) brightness(1) contrast(1) hue-rotate(0deg) invert(0); }
+
+.g li:hover {
+  filter: grayscale(0) blur(0px) sepia(0) saturate(1) opacity(1) brightness(1) contrast(1) hue-rotate(0deg) invert(0);
+  -webkit-filter: grayscale(0) blur(0px) sepia(0) saturate(1) opacity(1) brightness(1) contrast(1) hue-rotate(0deg) invert(0);
+  transition: filter 1s linear; }
 
 .g img {
-  display: block; }
+  display: block;
+  filter: drop-shadow(5px 5px 5px #f5f5f5);
+  -webkit-filter: drop-shadow(5px 5px 5px #f5f5f5); }
 
 .g li:nth-child(odd) {
   clear: left; }
+
+.circle {
+  border-radius: 150px; }
+  .circle .animate-show {
+    -webkit-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+    -moz-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+    -ms-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+    -o-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+    transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+    position: relative;
+    display: block; }
+  .circle .animate-show.ng-hide-add,
+  .circle .animate-show.ng-hide-remove {
+    opacity: 1;
+    bottom: 0;
+    height: 30px; }
+  .circle .animate-show.ng-hide {
+    opacity: 0;
+    bottom: -50px;
+    height: 0px; }
+
+.modal-body .circle {
+  border-radius: 250px;
+  height: 250px; }
+.modal-body p {
+  font-size: 1.1rem;
+  line-height: 1.2rem; }
+
+.modal-footer {
+  border: 1px color #fff; }
+
+.arc {
+  background: #ffffff;
+  height: 60px;
+  position: relative;
+  top: -60px;
+  opacity: 0.8; }
+  .arc ul li:first-child {
+    font-weight: bold; }
+  .arc ul li {
+    font-size: 1.2rem !important;
+    margin: 0 !important;
+    padding: 0;
+    text-align: center;
+    opacity: 1 !important;
+    width: 100%; }
+
+.inactive {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  opacity: 0.5; }
+
+.bg-violet {
+  background: #D6C0D0; }
+
+.bg-purple {
+  background: #C0B7C9; }
+
+.bg-turq {
+  background: #AFCDCE; }
+
+.bg-green {
+  background: #BADBC0; }
+
+.bg-light-green {
+  background: #D3E0CC; }
 
 @media screen and (min-width: 40em) {
   .g li {
