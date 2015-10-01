@@ -1,0 +1,96 @@
+<div class="container" id="section-4-1">
+  <div class="row">
+    <div class="col-md-12" ng-controller="teamCtrl">
+      <h2>Team</h2>
+      <!--Pattern HTML-->
+      <!--<div id="pattern" class="pattern">-->
+      <ul class="g">
+        <li class="circle" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-click="open()">
+          <img class="circle bg-green" src="images/team/alicia-hoffman.png" alt="alicia hoffman" />
+          <div class="arc" ng-show="hoverEdit">
+            <ul>
+              <li>Alicia Hoffman</li>
+              <li>Owner, Colorist-Stylist</li>
+            </ul>
+          </div>
+        </li>
+        <script type="text/ng-template" id="myModalContent.html">
+          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 4px;">x</button>
+          <div class="modal-body">
+            <div class="col-md-6">
+              <img class="circle bg-green" src="images/team/alicia-hoffman.png" alt="alicia hoffman" />
+            </div>
+            <div class="col-md-6">
+              <h3>Alicia Hoffman</h3>
+              <h5>Owner, Colorist-Stylist</h5>
+              <h5><a href="https://instagram.com/a.b.hoffman/">Instagram @ a.b.hoffman</a></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloremque est labore molestiae nostrum, provident quaerat quasi sapiente tempora ullam. Ad commodi doloremque enim quos. Amet eius facilis illum similique.</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
+          </div>
+        </script>
+        <li class="circle" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+          <img class="circle bg-violet" src="images/team/001.png" alt="001" />
+          <!--<div class="arc" ng-show="hoverEdit">
+						<ul>
+							<li>Lyn Gonzalez</li>
+							<li>Colorist-Stylist</li>
+						</ul>
+					</div>-->
+        </li>
+        <li class="circle bg-purple">
+          <img src="images/team/002.png" alt="002" />
+          <!--<div class="arc" ng-show="hoverEdit">-->
+          <!--<ul>-->
+          <!--<li></li>-->
+          <!--<li>Colorist-Stylist</li>-->
+          <!--</ul>-->
+          <!--</div>-->
+        </li>
+        <li>
+          <img class="circle bg-turq" src="images/team/alexa.png" alt="alexa" />
+          <!--<div class="arc" ng-show="hoverEdit">-->
+          <!--<ul>-->
+          <!--<li>Alexa</li>-->
+          <!--<li></li>-->
+          <!--</ul>-->
+          <!--</div>-->
+        </li>
+        <li>
+          <img class="circle bg-turq" src="images/team/jami.png" alt="jami" />
+          <!--<div class="arc" ng-show="hoverEdit">-->
+          <!--<ul>-->
+          <!--<li>Jami Ware</li>-->
+          <!--<li>Licensed Massage Therapist</li>-->
+          <!--</ul>-->
+          <!--</div>-->
+        </li>
+        <li>
+          <img class="circle bg-light-green" src="images/team/ashley.png" alt="ashley" />
+          <!--<div class="arc" ng-show="hoverEdit">-->
+          <!--<ul>-->
+          <!--<li>Ashley Craig</li>-->
+          <!--<li>Colorist-Stylist-Extension Specialist</li>-->
+          <!--</ul>-->
+          <!--</div>-->
+        </li>
+        <li>
+          <img class="circle bg-violet" src="images/team/christy.png" alt="christy" />
+          <!--<div class="arc" ng-show="hoverEdit">-->
+          <!--<ul>-->
+          <!--<li>Christy</li>-->
+          <!--</ul>-->
+          <!--</div>-->
+        </li>
+        <li><img class="circle bg-purple" src="images/team/cinnamon.png" alt="cinnamon" /></li>
+        <li><img class="circle bg-purple" src="images/team/ami.png" alt="ami" /></li>
+        <li><img class="circle bg-green" src="images/team/meg.png" alt="meg" /></li>
+        <li><img class="circle bg-light-green" src="images/team/thersea.png" alt="thersea" /></li>
+      </ul>
+      <!--</div>-->
+      <!--End Pattern HTML-->
+    </div>
+  </div>
+</div>

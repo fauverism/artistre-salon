@@ -1,0 +1,35 @@
+<div class="container" id="section-6">
+  <h1>Social</h1>
+  <div class="box-border">
+    <h2>Instagram</h2>
+  </div>
+  <section ng-controller="ShowImages as images">
+    <ul ng-show="layout == 'grid'" class="grid">
+      <!-- A view with big photos and no text -->
+      <li ng-repeat="p in pics">
+        <a href="{{p.link}}" target="_blank"><img ng-src="{{p.images.low_resolution.url}}" /></a>
+      </li>
+    </ul>
+    <ul ng-show="layout == 'list'" class="list">
+      <!-- A compact view smaller photos and titles -->
+      <li ng-repeat="p in pics">
+        <a href="{{p.link}}" target="_blank"><img ng-src="{{p.images.thumbnail.url}}" /></a>
+        <p>{{p.caption.text}}</p>
+      </li>
+    </ul>
+  </section>
+  <a href="https://instagram.com/artistresalonspa/" class="btn btn-info center-block">More Instagram</a>
+</div><!-- .container /section-6 -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>Facebook</h2>
+      <div class="fb-page" data-href="https://www.facebook.com/artistresalon" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/artistresalon"><a href="https://www.facebook.com/artistresalon">Artistre Salon</a></blockquote></div></div>
+    </div>
+    <div class="col-sm-6">
+      <h2>Twitter</h2>
+      <a class="twitter-timeline" href="https://twitter.com/artistrenj" data-widget-id="621874798151340033">Tweets by @artistrenj</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
+</div><!-- /.container -->
