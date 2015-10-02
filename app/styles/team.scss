@@ -74,17 +74,21 @@
   }
 }
 .modal-body {
+  float: left;
   .circle {
     border-radius: 250px;
     height: 250px;
   }
+  h3 {
+    margin: 6px 0 0 !important;
+  }
   p {
-    font-size: 1.1rem;
-    line-height: 1.2rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
   }
 }
 .modal-footer {
-  border: 1px color #fff;
+  border: 1px solid #fff;
 }
 .arc {
   background: #ffffff;

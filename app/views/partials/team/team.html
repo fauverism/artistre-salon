@@ -5,23 +5,23 @@
       <!--Pattern HTML-->
       <!--<div id="pattern" class="pattern">-->
       <ul class="g">
-        <li class="circle" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-click="open()">
-          <img class="circle bg-green" src="images/team/alicia-hoffman.png" alt="alicia hoffman" />
+        <li class="circle" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-click="openAlicia()">
+          <img class="circle bg-green" src="images/team/alicia-hoffman.png" alt="Alicia" />
           <div class="arc" ng-show="hoverEdit">
             <ul>
-              <li>Alicia Hoffman</li>
+              <li>Alicia</li>
               <li>Owner, Colorist-Stylist</li>
             </ul>
           </div>
         </li>
-        <script type="text/ng-template" id="myModalContent.html">
-          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 4px;">x</button>
+        <script type="text/ng-template" id="aliciaContent.html">
+          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>
           <div class="modal-body">
             <div class="col-md-6">
-              <img class="circle bg-green" src="images/team/alicia-hoffman.png" alt="alicia hoffman" />
+              <img class="circle bg-green" src="images/team/alicia-hoffman.png" alt="Alicia" />
             </div>
             <div class="col-md-6">
-              <h3>Alicia Hoffman</h3>
+              <h3>Alicia</h3>
               <h5>Owner, Colorist-Stylist</h5>
               <h5><a href="https://instagram.com/a.b.hoffman/">Instagram @ a.b.hoffman</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloremque est labore molestiae nostrum, provident quaerat quasi sapiente tempora ullam. Ad commodi doloremque enim quos. Amet eius facilis illum similique.</p>
@@ -31,24 +31,57 @@
             <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
           </div>
         </script>
-        <li class="circle" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+        <li class="circle" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-click="openLyn()">
           <img class="circle bg-violet" src="images/team/001.png" alt="001" />
-          <!--<div class="arc" ng-show="hoverEdit">
-						<ul>
-							<li>Lyn Gonzalez</li>
-							<li>Colorist-Stylist</li>
-						</ul>
-					</div>-->
+          <div class="arc" ng-show="hoverEdit">
+            <ul>
+              <li>Lyn</li>
+              <li>Colorist-Stylist</li>
+            </ul>
+          </div>
         </li>
-        <li class="circle bg-purple">
-          <img src="images/team/002.png" alt="002" />
-          <!--<div class="arc" ng-show="hoverEdit">-->
-          <!--<ul>-->
-          <!--<li></li>-->
-          <!--<li>Colorist-Stylist</li>-->
-          <!--</ul>-->
-          <!--</div>-->
+        <script type="text/ng-template" id="lynContent.html">
+          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>
+          <div class="modal-body">
+            <div class="col-md-6">
+              <img class="circle bg-green" src="images/team/001.png" alt="Lyn" />
+            </div>
+            <div class="col-md-6">
+              <h3>Lyn</h3>
+              <h5>Colorist-Stylist</h5>
+              <h5><a href="https://instagram.com/Hair_byLyn/">Instagram @ Hair_byLyn</a></h5>
+              <p>Being a hairstylist has always been a passion of mine.  Creating looks custom to clients lifestyles and personalities are so rewarding.  Outside of the salon, my family, husband and my two giant bunnies are my passion.</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
+          </div>
+        </script>
+        <li class="circle" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-click="openWendy()">
+        <img class="circle bg-purple" src="images/team/002.png" alt="002" />
+          <div class="arc" ng-show="hoverEdit">
+            <ul>
+              <li>Wendy</li>
+              <li>Colorist-Stylist</li>
+            </ul>
+          </div>
         </li>
+        <script type="text/ng-template" id="wendyContent.html">
+          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>
+          <div class="modal-body">
+            <div class="col-md-6">
+              <img class="circle bg-green" src="images/team/002.png" alt="Wendy" />
+            </div>
+            <div class="col-md-6">
+              <h3>Wendy</h3>
+              <h5>Colorist-Stylist</h5>
+              <p>I have over 20 years of experience.  I love and can do all aspects of hair from coloring, perming, cutting, styling and formal up styling.  I love my clients and it brings me joy to make them happy!  When the hair looks good, you feel good!</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
+          </div>
+        </script>
         <li>
           <img class="circle bg-turq" src="images/team/alexa.png" alt="alexa" />
           <!--<div class="arc" ng-show="hoverEdit">-->
