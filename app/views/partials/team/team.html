@@ -5,9 +5,9 @@
       <!--Pattern HTML-->
       <!--<div id="pattern" class="pattern">-->
       <ul class="g">
-        <li class="circle" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-click="openAlicia()">
+        <li class="circle" ng-click="openAlicia()">
           <img class="circle bg-green" src="images/team/alicia-hoffman.png" alt="Alicia" />
-          <div class="arc" ng-show="hoverEdit">
+          <div class="arc">
             <ul>
               <li>Alicia</li>
               <li>Owner, Colorist-Stylist</li>
@@ -24,16 +24,16 @@
               <h3>Alicia</h3>
               <h5>Owner, Colorist-Stylist</h5>
               <h5><a href="https://instagram.com/a.b.hoffman/">Instagram @ a.b.hoffman</a></h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloremque est labore molestiae nostrum, provident quaerat quasi sapiente tempora ullam. Ad commodi doloremque enim quos. Amet eius facilis illum similique.</p>
+              <p>First and foremost I would just like to say how wonderful this industry is beyond what the eye can see.  The power of beautifying and enhancing a clients look or even self esteem is the most gratifying feeling a stylist like myself could have.  I love hair and everything that comes along with it; the texture, the color, the ability of "change" and the client who wears it.  Besides the salon world and all of the wonderful staff at Artistre, I love food, my family, the movies and......COFFEE!</p>
             </div>
           </div>
           <div class="modal-footer">
             <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
           </div>
         </script>
-        <li class="circle" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-click="openLyn()">
+        <li class="circle" ng-click="openLyn()">
           <img class="circle bg-violet" src="images/team/001.png" alt="001" />
-          <div class="arc" ng-show="hoverEdit">
+          <div class="arc">
             <ul>
               <li>Lyn</li>
               <li>Colorist-Stylist</li>
@@ -57,9 +57,127 @@
             <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
           </div>
         </script>
-        <li class="circle" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-click="openWendy()">
-        <img class="circle bg-purple" src="images/team/002.png" alt="002" />
-          <div class="arc" ng-show="hoverEdit">
+        <li class="circle" ng-click="openAmi()">
+          <img class="circle bg-purple" src="images/team/ami.png" alt="ami" />
+          <div class="arc">
+            <ul>
+              <li>Ami</li>
+              <li>Aesthetician</li>
+            </ul>
+          </div>
+        </li>
+        <script type="text/ng-template" id="amiContent.html">
+          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>
+          <div class="modal-body">
+            <div class="col-md-6">
+              <img class="circle bg-green" src="images/team/ami.png" alt="Ami" />
+            </div>
+            <div class="col-md-6">
+              <h3>Ami</h3>
+              <h5>Aesthetician</h5>
+              <p>I've been an esthetician for 15 years, I love helping people feel great about the way they look and feel after any spa service.  When I'm not in the spa you can most likely find me on the fields with my two sons at one of their sporting events.</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
+          </div>
+        </script>
+        <li>
+          <img class="circle bg-turq" src="images/team/alexa.png" alt="alexa" />
+          <div class="arc">
+            <ul>
+              <li>Alexa</li>
+              <li>&nbsp;</li>
+            </ul>
+          </div>
+        </li>
+        <li class="circle" ng-click="openJami()">
+        <img class="circle bg-turq" src="images/team/jami.png" alt="jami" />
+          <div class="arc">
+            <ul>
+              <li>Jami</li>
+              <li>Licensed Massage Therapist</li>
+            </ul>
+          </div>
+        </li>
+        <script type="text/ng-template" id="jamiContent.html">
+          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>
+          <div class="modal-body">
+            <div class="col-md-6">
+              <img class="circle bg-green" src="images/team/jami.png" alt="Jami" />
+            </div>
+            <div class="col-md-6">
+              <h3>Jami</h3>
+              <h5>Licensed Massage Therapist</h5>
+              <p>I have been passionately massaging for 16 years; continuing education to help clients relax & relieve stress is important to me.  Outside of massage therapy I have a strong love for animals and enjoy traveling with my family.</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
+          </div>
+        </script>
+        <li class="circle" ng-click="openAshley()">
+        <img class="circle bg-light-green" src="images/team/ashley.png" alt="ashley" />
+          <div class="arc">
+            <ul>
+              <li>Ashley</li>
+              <li>Colorist-Stylist-Extension Specialist</li>
+            </ul>
+          </div>
+        </li>
+        <script type="text/ng-template" id="ashleyContent.html">
+          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>
+          <div class="modal-body">
+            <div class="col-md-6">
+              <img class="circle bg-green" src="images/team/ashley.png" alt="Ashley" />
+            </div>
+            <div class="col-md-6">
+              <h3>Ashley</h3>
+              <h5>Colorist-Stylist-Extension Specialist</h5>
+              <p>I love pretty hair and making clients feel beautiful.  I enjoy being able to be artistic and creative behind the chair.  Outside of work, I love being a mommy and spending time with my family.</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
+          </div>
+        </script>
+        <li class="circle" ng-click="openCinnamon()">
+          <img class="circle bg-purple" src="images/team/cinnamon.png" alt="cinnamon" />
+          <div class="arc">
+            <ul>
+              <li>Cinnamon</li>
+              <li>Colorist-Stylist</li>
+            </ul>
+          </div>
+        </li>
+        <script type="text/ng-template" id="cinnamonContent.html">
+          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>
+          <div class="modal-body">
+            <div class="col-md-6">
+              <img class="circle bg-green" src="images/team/cinnamon.png" alt="Cinnamon" />
+            </div>
+            <div class="col-md-6">
+              <h3>Cinnamon</h3>
+              <h5>Colorist-Stylist</h5>
+              <p>I live and breathe fashion.  When I am not at the salon you can find me shopping(true story).  Having an inspiring venue like Artistre to come unleash your creativity is EVERYTHING!!!</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
+          </div>
+        </script>
+        <li class="circle">
+          <img class="circle bg-green" src="images/team/meg.png" alt="meg" />
+          <div class="arc">
+            <ul>
+              <li>Meg</li>
+              <li>Stylist-Extension Specialist</li>
+            </ul>
+          </div>
+        </li>
+        <li class="circle" ng-click="openWendy()">
+          <img class="circle bg-purple" src="images/team/002.png" alt="002" />
+          <div class="arc">
             <ul>
               <li>Wendy</li>
               <li>Colorist-Stylist</li>
@@ -83,44 +201,26 @@
           </div>
         </script>
         <li>
-          <img class="circle bg-turq" src="images/team/alexa.png" alt="alexa" />
-          <!--<div class="arc" ng-show="hoverEdit">-->
-          <!--<ul>-->
-          <!--<li>Alexa</li>-->
-          <!--<li></li>-->
-          <!--</ul>-->
-          <!--</div>-->
-        </li>
-        <li>
-          <img class="circle bg-turq" src="images/team/jami.png" alt="jami" />
-          <!--<div class="arc" ng-show="hoverEdit">-->
-          <!--<ul>-->
-          <!--<li>Jami Ware</li>-->
-          <!--<li>Licensed Massage Therapist</li>-->
-          <!--</ul>-->
-          <!--</div>-->
-        </li>
-        <li>
-          <img class="circle bg-light-green" src="images/team/ashley.png" alt="ashley" />
-          <!--<div class="arc" ng-show="hoverEdit">-->
-          <!--<ul>-->
-          <!--<li>Ashley Craig</li>-->
-          <!--<li>Colorist-Stylist-Extension Specialist</li>-->
-          <!--</ul>-->
-          <!--</div>-->
-        </li>
-        <li>
           <img class="circle bg-violet" src="images/team/christy.png" alt="christy" />
-          <!--<div class="arc" ng-show="hoverEdit">-->
-          <!--<ul>-->
-          <!--<li>Christy</li>-->
-          <!--</ul>-->
-          <!--</div>-->
+          <div class="arc">
+            <ul>
+              <li>Christy</li>
+              <li>&nbsp;</li>
+            </ul>
+          </div>
         </li>
-        <li><img class="circle bg-purple" src="images/team/cinnamon.png" alt="cinnamon" /></li>
-        <li><img class="circle bg-purple" src="images/team/ami.png" alt="ami" /></li>
-        <li><img class="circle bg-green" src="images/team/meg.png" alt="meg" /></li>
-        <li><img class="circle bg-light-green" src="images/team/thersea.png" alt="thersea" /></li>
+        <li>
+          <img class="circle bg-light-green" src="images/team/thersea.png" alt="tersea" />
+          <div class="arc">
+            <ul>
+              <li>Tersea</li>
+              <li>Colorist-Stylist</li>
+              <!--
+I have been in the industry for 2o+ years.  I enjoy helping people make style changes or even maintaining the style they have.  My clients are not only my clients; they are my friends.  I hope I can touch their lives in some positive way each time we meet. -->
+            </ul>
+          </div>
+        </li>
+
       </ul>
       <!--</div>-->
       <!--End Pattern HTML-->

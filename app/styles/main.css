@@ -419,19 +419,21 @@ footer {
 
 .g {
   padding: 0.25em;
-  overflow: hidden; }
+  margin: 0 auto 60px;
+  overflow: hidden;
+  width: 120%; }
 
 .g li {
-  float: left;
+  display: inline-block;
   width: 50%;
-  padding: 0.25em;
+  padding: 1.25em;
   filter: grayscale(0.7) blur(0px) sepia(0.26506) saturate(1) opacity(0.7) brightness(1) contrast(1) hue-rotate(0deg) invert(0);
   -webkit-filter: grayscale(0.7) blur(0px) sepia(0.26506) saturate(1) opacity(0.51807) brightness(1) contrast(1) hue-rotate(0deg) invert(0); }
 
 .g li:hover {
   filter: grayscale(0) blur(0px) sepia(0) saturate(1) opacity(1) brightness(1) contrast(1) hue-rotate(0deg) invert(0);
   -webkit-filter: grayscale(0) blur(0px) sepia(0) saturate(1) opacity(1) brightness(1) contrast(1) hue-rotate(0deg) invert(0);
-  transition: filter 1s linear; }
+  transition: filter 0.5s linear; }
 
 .g img {
   display: block;
@@ -443,23 +445,6 @@ footer {
 
 .circle {
   border-radius: 150px; }
-  .circle .animate-show {
-    -webkit-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
-    -moz-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
-    -ms-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
-    -o-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
-    transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
-    position: relative;
-    display: block; }
-  .circle .animate-show.ng-hide-add,
-  .circle .animate-show.ng-hide-remove {
-    opacity: 1;
-    bottom: 0;
-    height: 30px; }
-  .circle .animate-show.ng-hide {
-    opacity: 0;
-    bottom: -50px;
-    height: 0px; }
 
 .modal-body {
   float: left; }
@@ -475,21 +460,18 @@ footer {
 .modal-footer {
   border: 1px solid #fff; }
 
-.arc {
-  background: #ffffff;
-  height: 60px;
-  position: relative;
-  top: -60px;
-  opacity: 0.8; }
-  .arc ul li:first-child {
-    font-weight: bold; }
-  .arc ul li {
-    font-size: 1.2rem !important;
-    margin: 0 !important;
-    padding: 0;
-    text-align: center;
-    opacity: 1 !important;
-    width: 100%; }
+.arc ul li:first-child {
+  font-size: 1.6rem !important;
+  font-weight: bold;
+  margin-top: 4px; }
+.arc ul li {
+  font-size: 1.4rem !important;
+  margin: 0 !important;
+  padding: 0;
+  text-align: center;
+  opacity: 1 !important;
+  vertical-align: text-top;
+  width: 100%; }
 
 .inactive {
   filter: grayscale(1);
