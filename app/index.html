@@ -71,16 +71,9 @@
         </div><!-- /.container-fluid -->
       </nav>
     </div>
-<div ng-controller="CarouselCtrl" class="carousel">
-  <carousel interval="myInterval">
-    <slide ng-repeat="slide in slides" active="slide.active" class="item">
-      <img ng-src="{{slide.image}}" style="margin:auto;" class="fadeInRight animated">
-    </slide>
-  </carousel>
-  <div class="logo"></div>
-</div>
+    <div ui-view="hero"></div>
   <div class="container">
-    <div ui-view></div>
+    <div ui-view="content"></div>
   </div>
 
     <footer>

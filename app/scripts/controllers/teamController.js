@@ -160,6 +160,48 @@ angular.module('artApp')
       });
     };
 
+    $scope.openMeg = function (size) {
+
+      var modalInstance = $modal.open({
+        animation: $scope.animationsEnabled,
+        templateUrl: 'megContent.html',
+        controller: 'teamCtrl',
+        size: size,
+        resolve: {
+          items: function () {
+            return $scope.items;
+          }
+        }
+      });
+
+      modalInstance.result.then(function (selectedItem) {
+        $scope.selected = selectedItem;
+      }, function () {
+        $log.info('Modal dismissed at: ' + new Date());
+      });
+    };
+
+    $scope.openTeresa = function (size) {
+
+      var modalInstance = $modal.open({
+        animation: $scope.animationsEnabled,
+        templateUrl: 'teresaContent.html',
+        controller: 'teamCtrl',
+        size: size,
+        resolve: {
+          items: function () {
+            return $scope.items;
+          }
+        }
+      });
+
+      modalInstance.result.then(function (selectedItem) {
+        $scope.selected = selectedItem;
+      }, function () {
+        $log.info('Modal dismissed at: ' + new Date());
+      });
+    };
+
     $scope.toggleAnimation = function () {
       $scope.animationsEnabled = !$scope.animationsEnabled;
     };

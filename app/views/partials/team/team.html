@@ -15,7 +15,6 @@
           </div>
         </li>
         <script type="text/ng-template" id="aliciaContent.html">
-          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>
           <div class="modal-body">
             <div class="col-md-6">
               <img class="circle bg-green" src="images/team/alicia-hoffman.png" alt="Alicia" />
@@ -23,7 +22,7 @@
             <div class="col-md-6">
               <h3>Alicia</h3>
               <h5>Owner, Colorist-Stylist</h5>
-              <h5><a href="https://instagram.com/a.b.hoffman/">Instagram @ a.b.hoffman</a></h5>
+              <h5><a href="https://instagram.com/a.b.hoffman/" target="_blank">Instagram @ a.b.hoffman</a></h5>
               <p>First and foremost I would just like to say how wonderful this industry is beyond what the eye can see.  The power of beautifying and enhancing a clients look or even self esteem is the most gratifying feeling a stylist like myself could have.  I love hair and everything that comes along with it; the texture, the color, the ability of "change" and the client who wears it.  Besides the salon world and all of the wonderful staff at Artistre, I love food, my family, the movies and......COFFEE!</p>
             </div>
           </div>
@@ -41,7 +40,7 @@
           </div>
         </li>
         <script type="text/ng-template" id="lynContent.html">
-          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>
+<!--          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>-->
           <div class="modal-body">
             <div class="col-md-6">
               <img class="circle bg-green" src="images/team/001.png" alt="Lyn" />
@@ -49,7 +48,7 @@
             <div class="col-md-6">
               <h3>Lyn</h3>
               <h5>Colorist-Stylist</h5>
-              <h5><a href="https://instagram.com/Hair_byLyn/">Instagram @ Hair_byLyn</a></h5>
+              <h5><a href="https://instagram.com/Hair_byLyn/" target="_blank">Instagram @ Hair_byLyn</a></h5>
               <p>Being a hairstylist has always been a passion of mine.  Creating looks custom to clients lifestyles and personalities are so rewarding.  Outside of the salon, my family, husband and my two giant bunnies are my passion.</p>
             </div>
           </div>
@@ -67,7 +66,6 @@
           </div>
         </li>
         <script type="text/ng-template" id="amiContent.html">
-          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>
           <div class="modal-body">
             <div class="col-md-6">
               <img class="circle bg-green" src="images/team/ami.png" alt="Ami" />
@@ -101,7 +99,6 @@
           </div>
         </li>
         <script type="text/ng-template" id="jamiContent.html">
-          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>
           <div class="modal-body">
             <div class="col-md-6">
               <img class="circle bg-green" src="images/team/jami.png" alt="Jami" />
@@ -126,7 +123,7 @@
           </div>
         </li>
         <script type="text/ng-template" id="ashleyContent.html">
-          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>
+<!--          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>-->
           <div class="modal-body">
             <div class="col-md-6">
               <img class="circle bg-green" src="images/team/ashley.png" alt="Ashley" />
@@ -134,6 +131,7 @@
             <div class="col-md-6">
               <h3>Ashley</h3>
               <h5>Colorist-Stylist-Extension Specialist</h5>
+              <h5><a href="https://instagram.com/Ashley_Arden/" target="_blank">Instagram @ Ashley_Arden</a></h5>
               <p>I love pretty hair and making clients feel beautiful.  I enjoy being able to be artistic and creative behind the chair.  Outside of work, I love being a mommy and spending time with my family.</p>
             </div>
           </div>
@@ -151,7 +149,7 @@
           </div>
         </li>
         <script type="text/ng-template" id="cinnamonContent.html">
-          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>
+<!--          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>-->
           <div class="modal-body">
             <div class="col-md-6">
               <img class="circle bg-green" src="images/team/cinnamon.png" alt="Cinnamon" />
@@ -159,14 +157,15 @@
             <div class="col-md-6">
               <h3>Cinnamon</h3>
               <h5>Colorist-Stylist</h5>
+              <h5><a href="https://instagram.com/Cinnamon1010/" target="_blank">Instagram @ Cinnamon1010</a></h5>
+              <h5><a href="https://twitter.com/Hairby_Cinnamon/" target="_blank">Twitter @ Hairby_Cinnamon</a></h5>
               <p>I live and breathe fashion.  When I am not at the salon you can find me shopping(true story).  Having an inspiring venue like Artistre to come unleash your creativity is EVERYTHING!!!</p>
             </div>
           </div>
           <div class="modal-footer">
-            <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
           </div>
         </script>
-        <li class="circle">
+        <li class="circle" ng-click="openMeg()">
           <img class="circle bg-green" src="images/team/meg.png" alt="meg" />
           <div class="arc">
             <ul>
@@ -175,8 +174,24 @@
             </ul>
           </div>
         </li>
+        <script type="text/ng-template" id="megContent.html">
+<!--          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>-->
+          <div class="modal-body">
+            <div class="col-md-6">
+              <img class="circle bg-green" src="images/team/meg.png" alt="Meg" />
+            </div>
+            <div class="col-md-6">
+              <h3>Meg</h3>
+              <h5>Colorist-Stylist</h5>
+              <p>In the nineteen years I have been in the hair industry, I have focused exclusively on cutting and barbering. I love giving each of my clients a signature custom designed haircut that fits their style and personality. I am also a huge fan of change and I can make all those grow in stages painless until we transition to the next style . I also offer top of the line human hair extension and Keratin services. I really enjoy all my time in the salon and I have some of the worlds most wonderful people as clients. Its a great to see people feel good about themselves and to know that I put a smile on their face because I love what I do.</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
+          </div>
+        </script>
         <li class="circle" ng-click="openWendy()">
-          <img class="circle bg-purple" src="images/team/002.png" alt="002" />
+          <img class="circle bg-purple" src="images/team/wendy.png" alt="002" />
           <div class="arc">
             <ul>
               <li>Wendy</li>
@@ -185,10 +200,9 @@
           </div>
         </li>
         <script type="text/ng-template" id="wendyContent.html">
-          <button class="btn" type="button" ng-click="cancel()" style="float: right; margin: 10px; padding: 0 4px;">x</button>
           <div class="modal-body">
             <div class="col-md-6">
-              <img class="circle bg-green" src="images/team/002.png" alt="Wendy" />
+              <img class="circle bg-green" src="images/team/wendy.png" alt="Wendy" />
             </div>
             <div class="col-md-6">
               <h3>Wendy</h3>
@@ -197,11 +211,10 @@
             </div>
           </div>
           <div class="modal-footer">
-            <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
           </div>
         </script>
         <li>
-          <img class="circle bg-violet" src="images/team/christy.png" alt="christy" />
+          <img class="circle bg-violet" src="images/team/christy.png" alt="Christy" />
           <div class="arc">
             <ul>
               <li>Christy</li>
@@ -209,17 +222,30 @@
             </ul>
           </div>
         </li>
-        <li>
-          <img class="circle bg-light-green" src="images/team/thersea.png" alt="tersea" />
+        <li class="circle" ng-click="openTeresa()">
+          <img class="circle bg-light-green" src="images/team/teresa.png" alt="Teresa" />
           <div class="arc">
             <ul>
               <li>Tersea</li>
               <li>Colorist-Stylist</li>
-              <!--
-I have been in the industry for 2o+ years.  I enjoy helping people make style changes or even maintaining the style they have.  My clients are not only my clients; they are my friends.  I hope I can touch their lives in some positive way each time we meet. -->
             </ul>
           </div>
         </li>
+        <script type="text/ng-template" id="teresaContent.html">
+          <div class="modal-body">
+            <div class="col-md-6">
+              <img class="circle bg-green" src="images/team/teresa.png" alt="Teresa" />
+            </div>
+            <div class="col-md-6">
+              <h3>Teresa</h3>
+              <h5>Colorist-Stylist</h5>
+              <p>I have been in the industry for 20+ years.  I enjoy helping people make style changes or even maintaining the style they have.  My clients are not only my clients; they are my friends.  I hope I can touch their lives in some positive way each time we meet.</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--<button class="btn btn-warning" type="button" ng-click="cancel()">X</button>-->
+          </div>
+        </script>
 
       </ul>
       <!--</div>-->
