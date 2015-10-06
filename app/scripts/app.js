@@ -18,9 +18,8 @@ angular.module('artApp', [
     'ui.bootstrap',
     'ui.router'
   ])
-//   .value('$sniffer', { history: false })
-  .config(function ($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/appointments");
+  .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+    //$urlRouterProvider.otherwise("/appointments");
     $stateProvider
       .state('about', {
         url: "/about",
@@ -71,5 +70,13 @@ angular.module('artApp', [
           "content": { templateUrl: "/views/partials/products.html" }
         }
       })
+      .state('menu', {
+        url: "/menu",
+        views: {
+          "hero": { templateUrl: "/views/partials/hero.html" },
+          "content": { templateUrl: "/views/partials/menu.html" }
+        }
+      })
     ;
+    $locationProvider.html5Mode(true);
   });

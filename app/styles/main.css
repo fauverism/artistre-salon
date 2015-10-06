@@ -132,6 +132,16 @@ ul.grid li img {
   width: 500px;
   z-index: 99; }
 
+.logo-hero {
+  background: url(../images/artistre-logo-mark-type-blk.png) center center no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  height: 133px;
+  margin: 0 auto;
+  position: relative;
+  width: 300px;
+  z-index: 99; }
+
 @media screen and (min-width: 24em) {
   .logo {
     top: -106px;
