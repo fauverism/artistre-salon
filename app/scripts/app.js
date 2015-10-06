@@ -18,8 +18,8 @@ angular.module('artApp', [
     'ui.bootstrap',
     'ui.router'
   ])
-  .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
-    //$urlRouterProvider.otherwise("/appointments");
+  .config(function ($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise("/about");
     $stateProvider
       .state('about', {
         url: "/about",
@@ -78,5 +78,5 @@ angular.module('artApp', [
         }
       })
     ;
-    $locationProvider.html5Mode(true);
+    //$locationProvider.html5Mode(true);
   });
