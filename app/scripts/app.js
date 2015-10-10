@@ -18,9 +18,16 @@ angular.module('artApp', [
     'ui.bootstrap',
     'ui.router'
   ])
-  .config(function ($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/about");
+  .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+    $urlRouterProvider.otherwise("/");
     $stateProvider
+      .state('/', {
+        url: "/",
+        views: {
+          "hero": { templateUrl: "/views/partials/caro.html" },
+          "content": { templateUrl: "/views/partials/about.html" }
+        }
+      })
       .state('about', {
         url: "/about",
         views: {
@@ -77,6 +84,13 @@ angular.module('artApp', [
           "content": { templateUrl: "/views/partials/menu.html" }
         }
       })
+      .state('contact', {
+        url: "/contact",
+        views: {
+          "hero": { templateUrl: "/views/partials/hero.html" },
+          "content": { templateUrl: "/views/partials/contact.html" }
+        }
+      })
     ;
-    //$locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
   });
